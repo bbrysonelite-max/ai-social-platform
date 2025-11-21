@@ -45,8 +45,8 @@ async def lifespan(app: FastAPI):
     logger.info("Database initialized")
     
     # Start Telegram bot
-    telegram_bot = TelegramBot(db_manager)
-    await telegram_bot.start()
+    # telegram_bot = TelegramBot(db_manager)
+    # await telegram_bot.start()
     logger.info("Telegram bot started")
     
     logger.info("✅ System ready")
